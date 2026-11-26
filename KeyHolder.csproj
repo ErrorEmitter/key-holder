@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net11.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>KeyHolder</RootNamespace>
+    <AssemblyName>KeyHolder</AssemblyName>
+    <Version>1.0.0</Version>
+    <Product>KeyHolder</Product>
+    <Description>按键保持：1 秒内按两下 Scroll Lock，再按要按住的键</Description>
+
+    <!-- requireAdministrator：启动时自动弹 UAC -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationDefaultFont>Microsoft YaHei UI, 9.75pt</ApplicationDefaultFont>
+
+    <!-- 发布为单个 exe，依赖本机已装的 .NET 11 桌面运行时 -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+  </PropertyGroup>
+
+</Project>
